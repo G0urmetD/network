@@ -6,7 +6,7 @@ read ip
 
 path="/etc/network/interfaces"
 
-echo "source /etc/network/interfacesces.d/*" > $path
+echo "source /etc/network/interfaces.d/*" > $path
 echo "" >> $path
 echo "auto enp0s3" >> $path
 echo "iface enp0s3 inet static" >> $path
