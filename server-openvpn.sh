@@ -32,3 +32,5 @@ echo "key server.key" >> $path
 echo "dh dh.pem" >> $path
 echo "ping-timer-rem" >> $path
 echo "keepalive 20 180" >> $path
+
+systemctl restart openvpn
