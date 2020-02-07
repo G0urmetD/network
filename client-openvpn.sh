@@ -16,7 +16,10 @@ cp /root/my_ca/pki/private/client01.key /etc/openvpn/
 
 clientpath="/etc/openvpn/client.conf"
 
-echo "remote 10.16.203.223 1194" > $clientpath
+echo Server-IP?
+read Sip
+
+echo "remote $Sip 1194" > $clientpath
 echo "proto udp" >> $clientpath
 echo "dev tun" >> $clientpath
 echo "ca ca.crt" >> $clientpath
@@ -25,3 +28,5 @@ echo "key client01.key" >> $clientpath
 echo "dh dh.pem" >> $clientpath
 echo "ping-timer-rem" >> $clientpath
 echo "keepalive 20 180" >> $clientpath
+
+systemctl restart openvpn
