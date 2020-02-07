@@ -1,7 +1,6 @@
 #!/bin/bash
 
 apt update
-apt install openvpn -y
 
 echo "source /etc/network/interfaces.d/*" > /etc/network/interfaces
 echo "" >> /etc/network/interfaces
