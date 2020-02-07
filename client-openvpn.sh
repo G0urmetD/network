@@ -4,11 +4,12 @@ echo "client" > /etc/hostname
 
 apt update
 
-cd /etc/openvpn/ rm -r server.crt
-cd /etc/openvpn/ rm -r server.key
-cd /etc/openvpn/ rm -r server.conf
-cd /etc/openvpn/ rm -r dh.pem
-cd /etc/openvpn/ rm -r server
+cd /etc/openvpn/ 
+rm -r server.crt
+rm -r server.key
+rm -r server.conf
+rm -r dh.pem
+rm -r server
 
 cp /root/my_ca/pki/issued/client01.crt
 cp /root/my_ca/pki/private/client01.key
