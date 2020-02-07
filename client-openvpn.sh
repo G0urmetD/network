@@ -11,8 +11,8 @@ rm -r server.conf
 rm -r dh.pem
 rm -r server
 
-cp /root/my_ca/pki/issued/client01.crt
-cp /root/my_ca/pki/private/client01.key
+cp /root/my_ca/pki/issued/client01.crt /etc/openvpn/
+cp /root/my_ca/pki/private/client01.key /etc/openvpn/
 
 clientpath="/etc/openvpn/client.conf"
 
