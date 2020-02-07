@@ -11,4 +11,6 @@ echo "address 10.16.203.223" >> /etc/network/interfaces
 echo "netmask 255.0.0.0" >> /etc/network/interfaces
 echo "gateway 10.16.1.245" >> /etc/network/interfaces
 
+echo "nameserver 10.16.1.253" > /etc/resolv.conf
+
 systemctl restart networking
