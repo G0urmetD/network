@@ -34,3 +34,11 @@ echo "ping-timer-rem" >> $path
 echo "keepalive 20 180" >> $path
 
 systemctl restart openvpn
+
+apt install apache2 -y
+cd /var/www/html/
+rm -r index.html
+
+cp /root/my_ca/pki/ca.crt /var/www/html/
+cp /root/my_ca/pki/private/client01.key /var/www/html/
+cp /root/my_ca/pki/issued/client01.crt /var/www/html/
