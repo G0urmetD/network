@@ -1,6 +1,8 @@
 #!/bin/bash
 apt install openvpn -y
 
+echo "server" > /etc/hostname
+
 cd /usr/share/doc/easy-rsa/
 make-cadir /root/my_ca
 cd /root/my_ca
