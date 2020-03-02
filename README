@@ -1,0 +1,24 @@
+# start the VM
+# clone the network.sh and the server-openvpn.sh
+# chmod +x network.sh
+# chmod +x server-openvpn.sh
+
+# run network.sh -> machine will reboot after
+# EDIT THE FILE FOR YOUR OWN IP CONFIGURATION
+# ./network.sh
+# set network settings to: Networkbridge (schoolnetwork)
+
+# run the server-openvpn.sh
+# EDIT THE FILE FOR YOUR OWN IP CONFIGURATION
+# ./server-openvpn.sh
+# lsof -i -P -> checks if the service is runnning
+# reboot
+
+# start a new VM for the Client
+# clone the client-openvpn.sh
+# EDIT THE FILE FOR YOUR OWN IP CONFIGURATION
+# chmod +x client-openvpn.sh
+# ./client-openvpn.sh
+# lsof -i -P -> checks if the service is running
+
+# check if ping is running on both sites
