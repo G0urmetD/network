@@ -55,5 +55,6 @@ cd /var/www/html/
 chown www-data:www-data ./*
 
 # shutdown
-sleep 5
+ip r
+sleep 8
 shutdown now
