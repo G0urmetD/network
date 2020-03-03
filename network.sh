@@ -18,4 +18,3 @@ path2="/etc/resolv.conf"
 echo "nameserver 10.16.1.253" > $path2
 
 systemctl restart networking
-reboot
