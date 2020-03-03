@@ -26,7 +26,7 @@ read Sip
 
 # Config client
 echo "client" > $clientpath
-echo "remote $Sip 1194" > $clientpath
+echo "remote $Sip 1194" >> $clientpath
 echo "proto udp" >> $clientpath
 echo "dev tun" >> $clientpath
 echo "ca ca.crt" >> $clientpath
