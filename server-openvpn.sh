@@ -54,5 +54,6 @@ cp /root/my_ca/pki/issued/client02.crt /var/www/html/
 cd /var/www/html/
 chown www-data:www-data ./*
 
+# shutdown
 sleep 5
 shutdown now
