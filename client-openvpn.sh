@@ -38,3 +38,4 @@ echo "keepalive 20 180" >> $clientpath
 
 # restart the opvenpn service
 systemctl restart openvpn
+reboot
