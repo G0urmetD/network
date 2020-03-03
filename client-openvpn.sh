@@ -20,8 +20,8 @@ cp /root/my_ca/pki/private/client01.key /etc/openvpn/
 # path of the client.conf
 clientpath="/etc/openvpn/client.conf"
 
-# asking for the IP
-echo Server-IP?
+# asking for the IP from the server [10.16.]
+echo Server-IP example 10.16.?
 read Sip
 
 # Config client
