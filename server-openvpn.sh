@@ -57,4 +57,5 @@ chown www-data:www-data ./*
 # shutdown
 ip r
 sleep 8
+echo see u later
 shutdown now
