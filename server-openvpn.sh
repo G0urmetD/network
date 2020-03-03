@@ -1,5 +1,6 @@
 #!/bin/bash
 apt install openvpn -y
+clear
 
 echo "server" > /etc/hostname
 
@@ -36,6 +37,7 @@ echo "keepalive 20 180" >> $path
 systemctl restart openvpn
 
 apt install apache2 -y
+clear
 cd /var/www/html/
 rm -r index.html
 
