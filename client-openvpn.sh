@@ -24,13 +24,14 @@ clientpath="/etc/openvpn/client.conf"
 echo Server-IP?
 read Sip
 
-# config
+# Config client
 echo "remote $Sip 1194" > $clientpath
 echo "proto udp" >> $clientpath
 echo "dev tun" >> $clientpath
 echo "ca ca.crt" >> $clientpath
 echo "cert client01.crt" >> $clientpath
 echo "key client01.key" >> $clientpath
+echo "remote-cert-tls server" >> $clientpath
 echo "ping-timer-rem" >> $clientpath
 echo "keepalive 20 180" >> $clientpath
 
