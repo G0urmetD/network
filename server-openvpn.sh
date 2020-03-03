@@ -1,9 +1,12 @@
 #!/bin/bash
+# install the openvpn service
 apt install openvpn -y
 clear
 
+# set the hostname to "server"
 echo "server" > /etc/hostname
 
+# create the CA and needed KEYS/CERTS
 cd /usr/share/doc/easy-rsa/
 make-cadir /root/my_ca
 cd /root/my_ca
@@ -21,6 +24,7 @@ cp /root/my_ca/pki/issued/server.crt /etc/openvpn/
 cp /root/my_ca/pki/ca.crt /etc/openvpn/
 cp /root/my_ca/pki/dh.pem /etc/openvpn/
 
+# just the path of the server.conf
 path="/etc/openvpn/server.conf"
 
 echo "server 192.168.0.0 255.255.255.0" > $path
@@ -34,8 +38,10 @@ echo "dh dh.pem" >> $path
 echo "ping-timer-rem" >> $path
 echo "keepalive 20 180" >> $path
 
+# restarts the openvpn service
 systemctl restart openvpn
 
+# install apache2 for sharing the client site documents
 apt install apache2 -y
 clear
 cd /var/www/html/
