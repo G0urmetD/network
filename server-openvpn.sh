@@ -46,7 +46,7 @@ apt install apache2 -y
 clear
 cd /var/www/html/
 rm -r index.html
-cd /var/www/html
+cd /var/www/html/
 chown www-data:www-data ./*
 
 cp /root/my_ca/pki/ca.crt /var/www/html/
