@@ -51,8 +51,9 @@ cp /root/my_ca/pki/ca.crt /var/www/html/
 cp /root/my_ca/pki/private/client02.key /var/www/html/
 cp /root/my_ca/pki/issued/client02.crt /var/www/html/
 
-cd /var/www/html/
-chown www-data:www-data ./*
+# Give rights to download
+# cd /var/www/html/
+# chown www-data:www-data ./*
 
 # shutdown
 ip r
