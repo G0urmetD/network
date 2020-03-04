@@ -50,6 +50,7 @@ rm -r index.html
 cp /root/my_ca/pki/ca.crt /var/www/html/
 cp /root/my_ca/pki/private/client02.key /var/www/html/
 cp /root/my_ca/pki/issued/client02.crt /var/www/html/
+cp ~/network/openvpn-exe.txt /var/www/html/
 
 # Give rights to download
 # cd /var/www/html/
