@@ -1,21 +1,27 @@
 # start the VM
-# clone the network.sh and the server-openvpn.sh
+# apt install git -y
+# clone https://github.com/G0urmetD/network.git
 # chmod +x network.sh
 # chmod +x server-openvpn.sh
 
-# run network.sh -> machine will reboot after
-# ./network.sh
+# run network.sh -> ./network.sh
 # set network settings to: Networkbridge (schoolnetwork)
-
-# run the server-openvpn.sh
-# ./server-openvpn.sh
-# lsof -i -P -> checks if the service is runnning
 # reboot
+# test ping after reboot
 
-# start a new VM for the Client
-# clone the client-openvpn.sh
+# run the server-openvpn.sh -> ./server-openvpn.sh
+# lsof -i -P -> checks if the service is runnning
+# (systemctl restart openvpn)
+# shutdown automatically with a sleep time of 8 seconds
+
+# clone the VM with another MAC as a linked clone
+# ./network.sh
 # chmod +x client-openvpn.sh
-# ./client-openvpn.sh
+# run -> ./client-openvpn.sh
+# test ping
 # lsof -i -P -> checks if the service is running
+# ip r
+# ip a
 
 # check if ping is running on both sites
+# done
