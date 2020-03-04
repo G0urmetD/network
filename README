@@ -23,5 +23,10 @@
 # ip r
 # ip a
 
+# run on the openvpn server
+# Give rights to download on the webserver
+# cd /var/www/html/
+# chown www-data:www-data .
+
 # check if ping is running on both sites
 # done
