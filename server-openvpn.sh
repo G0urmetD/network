@@ -1,7 +1,6 @@
 #!/bin/bash
 # install the openvpn service
-apt install openvpn -y
-sudo apt install ntp -y
+sudo apt install openvpn ntp -y
 clear
 
 # set the hostname to "server"
