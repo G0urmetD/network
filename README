@@ -9,6 +9,8 @@
 # reboot
 # test ping after reboot
 
+# extra: runtime of certificates can be changed in file vars
+
 # run the server-openvpn.sh -> ./server-openvpn.sh
 # lsof -i -P -> checks if the service is runnning
 # (systemctl restart openvpn)
